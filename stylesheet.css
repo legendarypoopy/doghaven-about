@@ -309,40 +309,21 @@ nav ul li:last-child {
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(9rem, 2fr)); 
-  grid-gap: var(--font_s);
-  padding: 12% 6% 10% 6%;
+  grid-gap: var(--font_l);
+  padding: 12% 6% 12% 6%;
   /* cursor: pointer; */
 }
-
-
-.logo1 {
-  background: var(--clr_light);    
-  /* transition: transform 1s; */
-}
-
-.logo_image1 {
-  width: 100%;
-  min-height: 8rem;
-  background: url("IMG/iscc\ logo.JPG");
-  background-size: contain;
-  /* background-size: 100%; */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--clr_light);
-  /* overflow: hidden; */
-}
-.logo_text1 {
-  min-height: 2rem;
-}
-.logo1 h3 {
-  padding: 17px 17px 0 17px;
+.milestone p {
   text-align: center;
 }
-.logo1 p {
-  padding: 3px 17px 15px 17px;
+.milestone h2 {
   text-align: center;
 }
 
+/* SPACER TO HIDE IF REQUIRED FOR TABLET/DESKTOP VIEW */
+.milestone br {
+  /* display: none; */
+}
 
 
 
