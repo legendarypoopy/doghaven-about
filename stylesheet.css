@@ -198,7 +198,7 @@ nav ul li:last-child {
   display: grid;
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); 
   grid-gap: var(--font_l) var(--font_s);
   padding: 12% 6% 10% 6%;
   /* cursor: pointer; */
@@ -391,7 +391,7 @@ nav ul li:last-child {
   /* Adjust image left/right */
   /* background-position-x: left; */
   /* Adjust image left/right/top/bottom */
-  /* background-position-y: center; */
+  background-position-y: top;
 }
 
 
@@ -605,17 +605,38 @@ footer .copyright p {
 
   /* TABLET SECTION: INTRO */
   .intro .expert {
-    padding: 6% 6% 0 6%;
+    padding: 8% 6% 0 6%;
   }
   .intro h1 {
     padding: 1% 6% 3% 6%;
   }
   .intro p {
-    padding: 0% 6% 10% 6%;
+    padding: 0% 6% 8% 6%;
   }
 
 
   /* TABLET SECTION: WHAT MAKES US */
+  .whatmakesus_box h1 {
+    padding: 6% 6% 1.5% 6%;
+  }
+  .whatmakesus_box p {
+    padding: 0% 6% 0% 6%;
+  }
+
+  /* TABLET SECTION: 3 LOGOS (ISCC,NDGAA, DFA) */
+  .logo_all {
+    padding: 6% 6% 6% 6%;
+  }
+
+
+  /* TABLET SECTION: YOUR EXPERIENCE IS OUR PRIORITY */
+  .our_priority h1 {
+    padding: 6% 6% 3% 6%;
+  }
+  .our_priority p {
+    padding: 0% 6% 6% 6%;
+  }
+
 
 
 
@@ -651,113 +672,39 @@ footer .copyright p {
   }
 
 
-  /* DESKTOP SECTION: Intro1 */
-  .intro1 {
-    height: 100vh;
-    background-size: cover;
-    /* background: pink; */
-    /* background-size: 100%; */
-    background-position-y: 0;
-  }
-  .intro1 .text h1 {
-    padding: 4% 6% 0 6%;
-  }
-  .btn1 {
-    /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-      margin: 1.2% 6% 10% 45%;
-    }
-
-  /* DESKTOP SECTION: Intro2 */
-  .intro2 {
-    height: 100vh;
-  }
-  .intro2 .text h1 {
-    padding: 20% 57% 0 6%;
-  }
-  .btn2 {
-    margin: 0.9% 5% 5% 6%;
-  }
-
-  /* DESKTOP SECTION: Intro3 */
-  .intro3 {
-    height: 100vh;
-  }
-  .intro3 .text h1 {
-    padding: 20% 7% 0 6%;
-  }
-  .intro3 .text h2 {
-    padding: 0.5% 70% 0% 6%;
-  }
-  .btn3 {
-    margin: 0.9% 5% 5% 6%;
-  }
-
-  /* DESKTOP SECTION: Intro4 */
-  .intro4 {
-    height: 100vh;
-  }
-  .intro4 .text .dfa_logo {
-    margin: 10% 0% 0 59%;
-  }
-  .intro4 .text h1 {
-    padding: 0.5% 8% 0 59%;
-  }
-  .intro4 .text h2 {
-    padding: 0.5% 8% 0% 59%;
-  }
-  .intro4 .text h3 {
-    padding: 8% 8% 0 59%;
-  }
-  .intro4 .text p {
-    padding: 2% 8% 0 59%;
-  }
-  .btn4 {
-  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-    margin: 0.9% 10% 5% 59%;
-  }
-
-
-  /* DESKTOP SECTION: NEWS title */
-  .news_title h1 {
-    padding: 8% 6% 3.5% 6%;
-  }    
-
-
-  /* DESKTOP SECTION: WORDS THAT WARM OUR HEARTS */
-  .testimonial_title h1 {
-    padding: 10% 6% 0 6%;
-  }
-
-
-  /* DESKTOP SECTION: WHAT DO WE DO? */  
-  .objective {
-    background-size: 30%;
-    /* Adjust image left/right */
-    background-position-x: 85%;
-    /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
-  }
-  .objective h1 {
+  /* DESKTOP SECTION: INTRO */
+  .intro .expert {
     padding: 6% 6% 0 6%;
   }
-  .objective p {
-    padding: 3% 52% 6% 6%;
+  .intro h1 {
+    padding: 1% 6% 1% 6%;
+  }
+  .intro p {
+    padding: 0% 6% 6% 6%;
   }
 
 
-  /* DESKTOP SECTION: WHAT'S OR SECRET? */  
-  .secret {
-    background-size: 50%;
-    /* Adjust image left/right */
-    background-position-x: left;
-    /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
-  }
-  .secret h1 {
-    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-    padding: 6% 6% 0 48%;
+  /* TABLET SECTION: WHAT MAKES US */
+  .whatmakesus_box h1 {
+    padding: 6% 6% 1% 6%;
+  }  
+
+  /* DESKTOP SECTION: 3 LOGOS (ISCC,NDGAA, DFA) */
+  .logo_all {
+    padding: 6% 6% 5% 6%;
   }
 
+
+  /* TABLET SECTION: YOUR EXPERIENCE IS OUR PRIORITY */
+  .our_priority h1 {
+    padding: 6% 6% 1% 6%;
+  }
+  .our_priority p {
+    padding: 0% 6% 4% 6%;
+  }
+  .divider2_image_on_mobile {
+    height: 15rem;
+  }
 
 
   /* DESKTOP SECTION: FOOTER */  
