@@ -136,11 +136,10 @@ nav ul li:last-child {
 .divider1_image_on_mobile {
   background-color: var(--clr_primary);
   /* height: 330px; */
-  height: 40vh;
+  height: 35vh;
   background-image: url("IMG/about\ us.JPG");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-size: 120%; */
   /* transform: rotate(-0.32deg); */
   /* Adjust image left/right */
   /* background-position-x: left; */
@@ -189,7 +188,7 @@ nav ul li:last-child {
   padding: 10% 6% 3% 6%;
 }
 .whatmakesus_box p {
-  padding: 0% 6% 10% 6%;
+  padding: 0% 6% 0% 6%;
 }
 
 
@@ -200,17 +199,17 @@ nav ul li:last-child {
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr)); 
-  grid-gap: var(--font_s);
-  padding: 0 6%;
+  grid-gap: var(--font_l) var(--font_s);
+  padding: 12% 6% 10% 6%;
   /* cursor: pointer; */
 }
 
 
 .logo1 {
   background: var(--clr_light);    
-  transition: transform 1s;
+  /* transition: transform 1s; */
 }
-.logo1:hover {
+/* .logo1:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.01);
 }
@@ -221,24 +220,25 @@ nav ul li:last-child {
 .logo1_link:visited {
   color: var(--clr_accent);
   text-decoration: none;
-}
-.logo1_link:hover {
+} */
+/* .logo1_link:hover { */
   /* background-color: red; */
   /* z-index: -991; */
-  color: var(--clr_primary);
-  text-decoration: none;
+  /* color: var(--clr_primary); */
+  /* text-decoration: none; */
   /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
   /* -webkit-filter: opacity(50%);filter: opacity(50%); */
-}
-.logo1_link:active {
+/* } */
+/* .logo1_link:active {
   color: var(--clr_dark);
   text-decoration: none;
-}
+} */
 .logo_image1 {
   width: 100%;
-  min-height: 13rem;
+  min-height: 8rem;
   background: url("IMG/iscc\ logo.JPG");
   background-size: contain;
+  /* background-size: 100%; */
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--clr_light);
@@ -259,9 +259,9 @@ nav ul li:last-child {
 
 .logo2 {
   background: var(--clr_light);
-  transition: transform 1s;
+  /* transition: transform 1s; */
 }
-.logo2:hover {
+/* .logo2:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.01);
 }
@@ -272,22 +272,22 @@ nav ul li:last-child {
 .logo2_link:visited {
   color: var(--clr_accent);
   text-decoration: none;
-}
-.logo2_link:hover {
+} */
+/* .logo2_link:hover { */
   /* background-color: red; */
   /* z-index: -991; */
-  color: var(--clr_primary);
-  text-decoration: none;
+  /* color: var(--clr_primary); */
+  /* text-decoration: none; */
   /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
   /* -webkit-filter: opacity(50%);filter: opacity(50%); */
-}
-.logo2_link:active {
+/* } */
+/* .logo2_link:active {
   color: var(--clr_dark);
   text-decoration: none;
-}
+} */
 .logo_image2 {
   width: 100%;
-  min-height: 13rem;
+  min-height: 8rem;
   background: url("IMG/ndgaa\ logo.gif");
   background-size: contain;
   background-repeat: no-repeat;
@@ -310,9 +310,9 @@ nav ul li:last-child {
 
 .logo3 {
   background: var(--clr_light);
-  transition: transform 1s;
+  /* transition: transform 1s; */
 }
-.logo3:hover {
+/* .logo3:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transform: scale(1.01);
 }
@@ -323,22 +323,22 @@ nav ul li:last-child {
 .logo3_link:visited {
   color: var(--clr_accent);
   text-decoration: none;
-}
-.logo3_link:hover {
+} */
+/* .logo3_link:hover { */
   /* background-color: red; */
   /* z-index: -991; */
-  color: var(--clr_primary);
-  text-decoration: none;
+  /* color: var(--clr_primary); */
+  /* text-decoration: none; */
   /* -webkit-filter: drop-shadow(8px 8px 10px green);filter: drop-shadow(8px 8px 10px green); */
   /* -webkit-filter: opacity(50%);filter: opacity(50%); */
-}
-.logo3_link:active {
+/* } */
+/* .logo3_link:active {
   color: var(--clr_dark);
   text-decoration: none;
-}
+} */
 .logo_image3 {
   width: 100%;
-  min-height: 13rem;
+  min-height: 8rem;
   background: url("IMG/dfa\ logo.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -358,6 +358,41 @@ nav ul li:last-child {
   text-align: center;
 }
 
+
+/* MOBILE SECTION: YOUR EXPERIENCE IS OUR PRIORITY */
+.our_priority {
+  /* width: 100%; */
+  /* height: auto; */
+
+  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
+  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
+  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
+  
+  background: var(--clr_shade);
+}
+.our_priority .our_priority_text {
+  /* width: 100%; */
+}
+.our_priority h1 {
+  padding: 10% 6% 3% 6%;
+}
+.our_priority p {
+  padding: 0% 6% 10% 6%;
+}
+.divider2_image_on_mobile {
+  background-color: var(--clr_primary);
+  /* height: 330px; */
+  height: 8rem;
+  background-image: url("IMG/plants.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-size: 120%; */
+  /* transform: rotate(-0.32deg); */
+  /* Adjust image left/right */
+  /* background-position-x: left; */
+  /* Adjust image left/right/top/bottom */
+  /* background-position-y: center; */
+}
 
 
 
@@ -568,152 +603,24 @@ footer .copyright p {
   }
 
 
-  /* TABLET SECTION: Slider buttons */
-  .sliderbtn {
-    width: 7%;
+  /* TABLET SECTION: INTRO */
+  .intro .expert {
+    padding: 6% 6% 0 6%;
+  }
+  .intro h1 {
+    padding: 1% 6% 3% 6%;
+  }
+  .intro p {
+    padding: 0% 6% 10% 6%;
   }
 
 
-  /* TABLET SECTION: Intro1 */
-  .intro1 {
-    width: 100%;
-    /* Image position and size adjustment */
-    background-image: url("IMG/hero.jpg");
-    background-repeat: no-repeat;
-    background-size: 180%;
-    /* background-size: cover; */
-    /* Adjust image left/right */
-    /* background-position-x: center; */
-    /* Adjust image top/bottom */
-    background-position-y: -1.5rem;
-    /* background-position: bottom; */
-    /* Adjust image left/right/top/bottom */
-    /* background-position: 400px 100px; */
-    /* display: none; */
-  }
-  .container_image_on_mobile1 {
-    background: none;
-  }
-  .intro1 .text {
-    width: 100%;
-  }
-  .intro1 .text h1 {
-    padding: 8% 6% 0 6%;
-  }
-  .btn1 {
-  /* Gap adjustment (top,left/right only, but not bottom because that one is adjust fr intro div -> padding: top/bottom) for button */
-    /* margin: 2.2% 6% 10% 33%; */
-    margin: 1.2% 6% 10% 41%;
-  }
+  /* TABLET SECTION: WHAT MAKES US */
 
 
-  /* TABLET SECTION: Intro2 */
-  .intro2 .text {
-    width: 100%;
-  }
-  .intro2 .text h1 {
-    padding: 40% 44% 0 6%;
-  }
-  .btn2 {
-    margin: 1.2% 5% 5% 6%;
-  }
 
 
-  /* TABLET SECTION: Intro3 */
-  .intro3 .text h1 {
-    padding: 40% 7% 0 6%;
-  }
-  .intro3 .text h2 {
-    padding: 0.5% 65% 0% 6%;
-  }
-  .btn3 {
-  margin: 1.2% 5% 5% 6%; 
-  }
-
-
-  /* TABLET SECTION: Intro4 */
-   .overlay4 {
-    width: 50%;
-    /* shift the overlay to top/bottom/left/right */
-    margin: 0 0% 0 50%;
-    height: 100vh;
-  }
-  .intro4 .text .dfa_logo {
-    margin: 15% 0% 0 56.3%;
-  }
-  .intro4 .text h1 {
-    padding: 1% 6% 0 56%;
-  }
-  .intro4 .text h2 {
-    padding: 0.5% 6% 0% 56%;
-  }
-  .intro4 .text h3 {
-    padding: 8% 6% 0 56%;
-  }
-  .intro4 .text p {
-    padding: 2% 6% 0 56%;
-  }
-  .btn4 {
-  /* Gap adjustment (top,left/right only, but not bottomn because that one is adjust fr intro div -> padding: top/bottom) for button */
-    margin: 1.2% 5% 5% 56%;
-  }
-
-  
-  /* TABLET SECTION: WORDS THAT WARM OUR HEARTS */
-  .testimonial_title h1 {
-    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-    padding: 15% 6% 0 6%;
-  }
-  
-
-  /* TABLET SECTION: WHAT DO WE DO? */
-  .objective {
-    background-image: url("IMG/goldenr.png");
-    background-repeat: no-repeat;
-    background-size: 58%;
-    /* Adjust image left/right */
-    background-position-x: 110%;
-    /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
-  }
-  .objective p {
-    padding: 3% 51% 6% 6%;
-  }
-  .divider1_image_on_mobileATOM {
-    /* height is 0 bc to remove the mobile view image */
-    height: 0;
-    background-image: none;
-  }
-
-
-  /* TABLET SECTION: WHAT'S OUR SECERT? */
-  .secret {
-    background-color: var(--clr_dark);
-    background-image: url("IMG/dogshadow.JPG");
-    background-repeat: no-repeat;
-    background-size: 58%;
-    /* Adjust image left/right */
-    background-position-x: left;
-    /* Adjust image left/right/top/bottom */
-    background-position-y: bottom;
-  }
-  .secret h1 {
-    /* Adjust left and right  gap here. This is to fix the white line on the right even when width is 100%. */
-    padding: 9% 6% 0 48%;
-  }
-  .secret p {
-    /* Adjust only top and bottom. Left and right control in .recognition div */
-    padding: 3% 6% 6% 48%;
-    /* Font size, family, height to adjust in Typography. Only adjust the color below as default is --clr_accent */
-    color: var(--clr_light);
-  }
-  .divider2_image_on_mobile {
-    /* height is 0 bc to remove the mobile view image */
-    height: 0;
-    background-image: none;
-  }
-
-  /* TABLET SECTION: WHAT'S OUR SECERT? */
+  /* TABLET SECTION: FOOTER */
   footer .info p {
     /* Adjust only top and bottom. Left and right control in .recognition div */
     padding: 1.5% 36% 0% 6%;
