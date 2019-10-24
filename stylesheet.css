@@ -315,14 +315,10 @@ nav ul li:last-child {
 }
 .milestone p {
   text-align: center;
+  font-size: calc(var(--font_n) * 0.85);
 }
 .milestone h2 {
   text-align: center;
-}
-
-/* SPACER TO HIDE IF REQUIRED FOR TABLET/DESKTOP VIEW */
-.milestone br {
-  /* display: none; */
 }
 
 
