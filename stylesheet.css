@@ -308,17 +308,41 @@ nav ul li:last-child {
   display: grid;
   /* Can change 1 to auto-fit and it will be responsive
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
-  grid-template-columns: repeat(auto-fit, minmax(9rem, 2fr)); 
-  grid-gap: var(--font_l);
-  padding: 12% 6% 12% 6%;
-  /* cursor: pointer; */
+  grid-template-columns: repeat(auto-fit, minmax(8.5rem, 2fr)); 
+  grid-gap: var(--font_m) var(--font_s);
+  padding: 12% 3% 12% 6%;
+}
+
+.wreath_left {
+  background-image: url("IMG/laurel\ wreath\ left.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 60px;
+  display: inline-block;
+  width: 15%;
+}
+.middle {
+  display: inline-block;
+  width: 57%;
+  vertical-align: top; 
 }
 .milestone p {
   text-align: center;
-  font-size: calc(var(--font_n) * 0.85);
+  font-size: calc(var(--font_n) * 0.8);
 }
 .milestone h2 {
   text-align: center;
+  font-size: calc(var(--font_n) * 1.0);
+}
+.wreath_right {
+  background-image: url("IMG/laurel\ wreath\ right.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: 60px;
+  display: inline-block;
+  width: 15%;
 }
 
 
@@ -353,7 +377,7 @@ nav ul li:last-child {
   background-color: var(--clr_primary);
   /* height: 330px; */
   height: 8rem;
-  background-image: url("IMG/plants.jpg");
+  background-image: url("IMG/plants.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   /* background-size: 120%; */
@@ -605,6 +629,28 @@ footer .copyright p {
   }
 
 
+  /* TABLET SECTION: MILESTONES */
+  .milestone_all {
+    /* Can change 1 to auto-fit and it will be responsive
+    18rem is the biggest it can go before the screen can't fit for small mobile devices */
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
+    grid-gap: var(--font_m) var(--font_s);
+    padding: 12% 4% 12% 6%;
+  }
+  
+  .middle {
+    width: 47%;
+  }
+  .milestone p {
+    font-size: calc(var(--font_n) * 0.9);
+  }
+  .milestone h2 {
+    font-size: calc(var(--font_n) * 1.15);
+  }
+
+
+
+
   /* TABLET SECTION: YOUR EXPERIENCE IS OUR PRIORITY */
   .our_priority h1 {
     padding: 6% 6% 3% 6%;
@@ -674,6 +720,46 @@ footer .copyright p {
   .logo_all {
     padding: 6% 6% 5% 6%;
   }
+
+
+  /* DESKTOP SECTION: MILESTONES */
+  .milestone_all {
+    /* Can change 1 to auto-fit and it will be responsive
+    18rem is the biggest it can go before the screen can't fit for small mobile devices */
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+    grid-gap: var(--font_m) var(--font_s);
+    padding: 6% 4% 6% 6%;
+  }
+  
+  .wreath_left {
+    height: 80px;
+  }
+  .middle {
+    width: 47%;
+  }
+  .milestone p {
+    font-size: calc(var(--font_n) * 1.1);
+  }
+  .milestone br {
+    display: none;
+  }
+  .milestone h2 {
+    font-size: calc(var(--font_l) * 1);
+  }
+  .wreath_right {
+    height: 80px;
+    width: 20%;
+  }
+
+
+
+
+
+
+
+
+
+
 
 
   /* DESKTOP SECTION: YOUR EXPERIENCE IS OUR PRIORITY */
