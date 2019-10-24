@@ -727,7 +727,7 @@ footer .copyright p {
     /* Can change 1 to auto-fit and it will be responsive
     18rem is the biggest it can go before the screen can't fit for small mobile devices */
     grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
-    grid-gap: var(--font_m) var(--font_s);
+    grid-gap: calc(var(--font_l) * 1.3) var(--font_s);
     padding: 6% 4% 6% 6%;
   }
   
