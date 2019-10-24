@@ -302,6 +302,12 @@ nav ul li:last-child {
 
 
 /* MOBILE SECTION: MILESTONES */
+.milestone_title {
+  padding: 12% 6% 6% 6%;
+  background: var(--clr_dark);
+  color: var(--clr_light);
+}
+
 .milestone_all {
   background: var(--clr_dark);
   color: var(--clr_light);
@@ -310,7 +316,7 @@ nav ul li:last-child {
   18rem is the biggest it can go before the screen can't fit for small mobile devices */
   grid-template-columns: repeat(auto-fit, minmax(8.5rem, 2fr)); 
   grid-gap: var(--font_m) var(--font_s);
-  padding: 12% 3% 12% 6%;
+  padding: 0% 3% 12% 6%;
 }
 
 .wreath_left {
@@ -629,14 +635,35 @@ footer .copyright p {
     padding: 6% 6% 6% 6%;
   }
 
+  /* Do this so as to align all the text in the same row and line */
+  .logo1 p,
+  .logo2 p,
+  .logo3 p {
+    font-size: calc(var(--font_n) * 0.90);
+  }
+
+  /* Do this so as to align all the text in the same row and line */
+  .logo3 h3 {
+    width: 80%;
+  }  
+  .logo3 p {
+    width: 75%;
+  }
+
+  
+
 
   /* TABLET SECTION: MILESTONES */
+  .milestone_title {
+    padding: 8% 6% 6% 6%;
+  }
+
   .milestone_all {
     /* Can change 1 to auto-fit and it will be responsive
     18rem is the biggest it can go before the screen can't fit for small mobile devices */
     grid-template-columns: repeat(auto-fit, minmax(12rem, 2fr));
     grid-gap: var(--font_m) var(--font_s);
-    padding: 12% 4% 12% 6%;
+    padding: 0% 4% 8% 6%;
   }
   
   .middle {
@@ -724,12 +751,16 @@ footer .copyright p {
 
 
   /* DESKTOP SECTION: MILESTONES */
+  .milestone_title {
+    padding: 6% 6% 4% 6%;
+  }
+
   .milestone_all {
     /* Can change 1 to auto-fit and it will be responsive
     18rem is the biggest it can go before the screen can't fit for small mobile devices */
     grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
     grid-gap: calc(var(--font_l) * 1.3) var(--font_s);
-    padding: 6% 4% 6% 6%;
+    padding: 0% 4% 6% 6%;
   }
   
   .wreath_left {
