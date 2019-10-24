@@ -734,9 +734,10 @@ footer .copyright p {
   
   .wreath_left {
     height: 80px;
+    width: 12%;
   }
   .middle {
-    width: 47%;
+    width: 59%;
   }
   .milestone p {
     font-size: calc(var(--font_n) * 1.1);
@@ -750,7 +751,7 @@ footer .copyright p {
   }
   .wreath_right {
     height: 80px;
-    width: 20%;
+    width: 15%;
   }
 
 
