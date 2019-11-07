@@ -177,22 +177,12 @@ nav ul li:last-child {
 
 /* MOBILE SECTION: INTRO STORY */
 .intro {
-  width: 100%;
-  height: auto;
-
-  /* IMPTT NOTE: Do NOT add padding here to make standardized top/bottom/left/right gap (in this div)! 
-  Else it will create a white line on the extreme right of phone due to the padding pushing on the right side. 
-  All paddings (to do in )top/bottom/left/right) to do in h1, h2, p  etc */
-  
   background: var(--clr_shade);
 }
-.intro .intro_text {
-  width: 100%;
-}
-.intro h1 {
+.intro_header {
   padding: 10% 6% 3% 6%;
 }
-.intro p {
+.intro_body {
   padding: 0% 6% 10% 6%;
 }
 
@@ -211,10 +201,10 @@ nav ul li:last-child {
 .whatmakesus_box {
   /* width: 100%; */
 }
-.whatmakesus_box h1 {
+.whatmakesus_header {
   padding: 10% 6% 3% 6%;
 }
-.whatmakesus_box p {
+.whatmakesus_body {
   padding: 0% 6% 0% 6%;
 }
 
@@ -639,19 +629,19 @@ footer .copyright p {
 
 
   /* TABLET SECTION: INTRO */
-  .intro h1 {
+  .intro_header {
     padding: 6% 6% 1% 6%;
   }
-  .intro p {
+  .intro_body {
     padding: 0% 6% 8% 6%;
   }
 
 
   /* TABLET SECTION: WHAT MAKES US */
-  .whatmakesus_box h1 {
+  .whatmakesus_header {
     padding: 6% 6% 1.5% 6%;
   }
-  .whatmakesus_box p {
+  .whatmakesus_body {
     padding: 0% 6% 0% 6%;
   }
 
@@ -756,18 +746,31 @@ footer .copyright p {
   }
 
   /* DESKTOP SECTION: INTRO */
-  .intro h1 {
-    padding: 5% 6% 1% 6%;
+  .intro_text {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 2fr)); 
+    justify-items: center;
+    align-items: center;
+    /* grid-gap: var(--font_s); */
+    padding: 7% 0%;
   }
-  .intro p {
-    padding: 0% 6% 6% 6%;
+
+  .intro_header {
+    padding: 0%;
+  }
+  .intro_body {
+    padding: 0% 14% 0% 4%;
+    /* background:pink; */
   }
 
 
   /* DESKTOP SECTION: WHAT MAKES US */
-  .whatmakesus_box h1 {
+  .whatmakesus_header {
     padding: 6% 6% 1% 6%;
-  }  
+  }
+  .whatmakesus_body {
+    padding: 0% 6% 0% 6%;
+  }
 
   /* DESKTOP SECTION: 3 LOGOS (ISCC,NDGAA, DFA) */
   .logo_all {
