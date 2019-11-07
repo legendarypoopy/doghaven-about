@@ -65,21 +65,18 @@ nav {
   position: fixed;
   z-index: 99;
   width: 100%;
-  /* background: red; */
   display: flex;
   flex-direction: column;
-  /* background: orange; */
   font-weight: 500;
   }
 nav #logo {
   background-color: var(--clr_shade);
   height: 100px;
+  width: 220px;
   background-image: url("IMG/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  /* Cannot use margin bc this is background image, so will have a space when i add background color behind
-  so have to use background-position-x to align the logo  */
-  background-position-x: 13%;
+  margin: 0% 0 0 6%;
   display: none;
 }
 nav ul {
@@ -108,8 +105,8 @@ nav ul li a {
   /* font-weight: 900; */
 }
 nav ul li a:hover {
-  color: var(--clr_primary);
-  background: rgba(255, 255, 255, 0.8);
+  color: black;
+  background: var(--clr_shade);
 }
 /* This is to give extra white space at the top when toggle menu */
 nav ul li:first-child {
@@ -118,6 +115,13 @@ nav ul li:first-child {
 /* This is to give extra white space at the bottom to cover entire screen when toggle menu */
 nav ul li:last-child {
   padding: 0 0 100% 0;
+}
+.currentnav {
+  cursor: default;
+  border-left: 5px solid var(--clr_accent);
+}
+.currentnav:hover {
+  color: inherit;
 }
 .menu_toggle {
   position: absolute;
@@ -145,12 +149,24 @@ nav ul li:last-child {
   /* background-position-x: left; */
   /* Adjust image left/right/top/bottom */
   /* background-position-y: center; */
+  position: relative;
+}
+#logo_greenbg {
+  position: absolute;
+  height: 42px;
+  width: 100px;
+  background-image: url("IMG/logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0.5% 0 0 6%;
 }
 .start {
   color: var(--clr_light);
 }
 .start_tag {
   padding: 25% 6% 0.5% 55%;
+  font-size: var(--font_s);
+
 }
 .start h1 {
   padding: 0% 6% 3% 55%;
@@ -297,7 +313,6 @@ nav ul li:last-child {
   padding: 3px 17px 15px 17px;
   text-align: center;
 }
-
 
 
 
@@ -599,12 +614,22 @@ footer .copyright p {
   nav ul li:last-child {
     padding: 0;
   }
+  .currentnav {
+    border-left: none;
+    text-decoration: overline;
+  }
+  .currentnav:hover {
+    background: transparent;
+  }
   .menu_toggle {
     display: none;
   }
 
 
   /* TABLET SECTION: ALL ABOUT US */
+  #logo_greenbg {
+    background-image: none;
+  }
   .start_tag {
     padding: 20% 6% 0.5% 55%;
   }
